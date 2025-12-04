@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <style>
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: linear-gradient(135deg, #111d4a, #2575fc);
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #132048;
+        }
+        .card {
+            width: 400px;
+            padding: 34px;
+            background: rgba(255,255,255,0.96);
+            border-radius: 18px;
+            box-shadow: 0 24px 60px rgba(12,26,75,0.35);
+            text-align: center;
+        }
+        h2 {
+            margin-top: 0;
+            font-size: 30px;
+        }
+        p {
+            color: #5d6995;
+            margin-bottom: 28px;
+        }
+        button {
+            padding: 13px 28px;
+            border: none;
+            border-radius: 999px;
+            background: linear-gradient(135deg, #ff5d6c, #ff9234);
+            color: #fff;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: opacity 0.2s ease;
+        }
+        button:hover {
+            opacity: 0.92;
+        }
+    </style>
+</head>
+<body>
+<div class="card">
+    <h2>Hello, {{username}} 👋</h2>
+    <p>You’re now viewing the secure area. Explore confidently knowing your session is protected.</p>
+    <form method="post" action="/logout">
+        <button type="submit">Logout</button>
+    </form>
+</div>
+</body>
+</html>
